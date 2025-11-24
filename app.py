@@ -4,7 +4,7 @@ from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 # Set the Flask application
 application = Flask(
     __name__, 
-    template_folder='C://Users//Amreet//Desktop//BigMart_Sales_Prediction//templates'
+    template_folder='C://Users//Amreet//Desktop//Bagging_Technique//Template'
 )
 app = application
 

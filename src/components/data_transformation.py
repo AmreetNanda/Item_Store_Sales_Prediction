@@ -50,10 +50,10 @@ class DataTransformation:
             ]
 
             categorical_columns = [
-                "Item_Identifier_Categories",
+                # "Item_Identifier_Categories",
                 "Item_Fat_Content",
                 "Item_Type",
-                "Outlet_Identifier",
+                # "Outlet_Identifier",
                 "Outlet_Size",
                 "Outlet_Location_Type",
                 "Outlet_Type"
@@ -197,7 +197,8 @@ class DataTransformation:
             # 3. DEFINE TARGET AND DROP COLUMNS
             # ======================================================
             target_column_name = "Item_Outlet_Sales"
-            drop_columns = [target_column_name, "Item_Identifier"]
+            drop_columns = [target_column_name, 'Item_Identifier', 'Outlet_Identifier']
+
 
             X_train = train_df.drop(columns=drop_columns)
             y_train = train_df[target_column_name]
